@@ -32,7 +32,7 @@ public class Account {
     }
 
     public void withdrewFunds(double amount) {
-        if (balance > amount) {
+        if (balance >= amount) {
             balance -= amount;
             System.out.println(amount + " withdrew form your account. Remaining account balance is " + balance);
         } else {

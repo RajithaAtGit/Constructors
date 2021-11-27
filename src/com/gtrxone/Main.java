@@ -20,19 +20,18 @@ public class Main {
 //        rajithasAccount.withdrewFunds(2500);
 
 
+        VipCustomer bobVIP = new VipCustomer("bob", 500000);
+        System.out.println("Name " + bobVIP.getName());
+        System.out.println("Credit Limit " + bobVIP.getCreditLimit()+"\n\n");
 
-        VipCustomer bobVIP = new VipCustomer("bob",500000);
-        System.out.println(bobVIP.getName());
-        System.out.println(bobVIP.getCreditLimit());
-
-        VipCustomer maxVIP = new VipCustomer("max",300000.00,"maxdouod@mail.com");
-        System.out.println(maxVIP.getName());
-        System.out.println(maxVIP.getCreditLimit());
-        System.out.println(maxVIP.getEmail());
+        VipCustomer maxVIP = new VipCustomer("max", 300000.00, "maxdouod@mail.com");
+        System.out.println("Name " + maxVIP.getName());
+        System.out.println("Credit Limit " + maxVIP.getCreditLimit());
+        System.out.println("Email " + maxVIP.getEmail()+"\n\n");
 
         VipCustomer vipCustomer = new VipCustomer();
-        System.out.println(vipCustomer.getName());
-        System.out.println(vipCustomer.getCreditLimit());
-        System.out.println(vipCustomer.getEmail());
+        System.out.println("Name " + vipCustomer.getName());
+        System.out.println("Credit Limit " + vipCustomer.getCreditLimit());
+        System.out.println("Email " + vipCustomer.getEmail());
     }
 }
